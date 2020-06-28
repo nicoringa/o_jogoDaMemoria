@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #555;
+    text-align: center;
+    
+}
+
+#container{
+    width: 1325px;
+    height: 495px;
+    border: 1px solid #111;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: #ffdbb3;
+    margin-top: 20px;
+}
+
+.card{
+    width: 160px;
+    height: 240px;
+    position: absolute;
+    border-radius: 10px;
+    perspective: 600px;
+}
+
+.face{
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s;
+    backface-visibility: hidden;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.back{
+    background: url("../img/verso.jpg")
+}
+
+.back.flipped{
+    transform: rotateY(180deg);
+}
+
+.front{
+    transform: rotateY(-180deg);
+}
+
+.front.flipped{
+    
+    transform: rotateY(0deg);
+}
+
+.card:hover{
+    box-shadow: 0 0 10px red;
+}
+
+.face.flipped.match{
+    box-shadow: 0 0 10px green;
+}
+
+#modalGameOver{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+#imgGameOver{
+    margin-top: 200px;
+}
+
+#imgMatchSign{
+    position: relative;
+    top: 250px;
+    transition-property: top, opacity;
+    transition-duration: 1.5s;
+    opacity: 1;
+    z-index: -1;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active{
+    background-color: #333;
+    color: white;
+}
+
+.regrasjogo h2{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    color:white;
+}
+
+#container2{
+    width: 670px;
+    height: 800;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#container2 p{
+    font-size: 25px;
+    color: #e0d76f;
+    text-align: left;
+    margin: 20px;
+    padding: 10px;
+}
+
+label{
+    color: #fff;
+    font-size: 20px;
+}
+
+#text1{
+    height: 25px;
+}
+
+form{
+    margin-top: 15px;
+}

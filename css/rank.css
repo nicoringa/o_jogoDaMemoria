@@ -1,0 +1,126 @@
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active{
+    background-color: #333;
+    color: white;
+}
+
+body{
+    background-color: royalblue;
+    background-size: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+} 
+.form{
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 700px;
+}
+
+.form .inputBox{
+    margin-bottom: 40px;
+}
+
+.form .inputBox input{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.form .inputBox input::placeholder{
+    color: #fff;
+
+}
+
+.form .inputBox textarea{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    min-height: 150px;
+    border-bottom: 2px solid #fff;
+}
+
+.form .inputBox textarea::placeholder{
+    color: #fff;  
+}
+
+.form .inputBox input[type="submit"]{
+        width: 150px;
+        background-color: #fff;
+        color: #111;
+        cursor: pointer;
+        font-weight: 400px;
+        margin-top: 10px;
+}
+
+legend{
+    font-size: 20px;
+    color: #fff;
+    margin: 10px;
+}
+
+table{
+    width: 30%;
+    border-collapse: collapse;
+    border: 3px solid rgb(255, 255, 153);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 650px;
+}
+
+tbody{
+    font-size: 90%;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+thead{
+    color: red;
+}
+
+td{
+    text-align: center;
+    border: 1px solid rgb(100,130,40);
+}
+
+caption{
+    font-style: Arial;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+}
